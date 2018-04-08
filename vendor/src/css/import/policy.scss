@@ -1,0 +1,53 @@
+.policy-popup{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #F9F9F9;
+    padding: 12px 0;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: left;
+    border-top: 1px solid #ccc;
+    transform: translate3d(0, 100%, 0);
+    visibility: hidden;
+    transition: all .5s;
+    z-index: 999999;
+}
+
+.policy-popup.showed{
+    transform: translate3d(0, 0, 0);
+    visibility: visible;
+}
+
+.policy-popup__container{
+    position: relative;
+    padding-right: 40px;
+}
+
+.policy-popup__close{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: -12px;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.policy-popup__close::before,
+.policy-popup__close::after{
+    content: '';
+    position: absolute;
+    width: 2px;
+    left: 50%;
+    margin-left: -1px;
+    height: 100%;
+    top: 0;
+    background-color: #000;
+    transform: rotate(45deg);
+}
+
+.policy-popup__close::after{
+    transform: rotate(-45deg);
+}

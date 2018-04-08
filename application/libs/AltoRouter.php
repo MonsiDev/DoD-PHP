@@ -193,8 +193,8 @@ class AltoRouter {
 					}
 				}
 				return array(
-					'controller' => $name,
-					'action' => $target,
+					'name' => $name,
+					'target' => $target,
 					'params' => $params,
 				);
 			}
