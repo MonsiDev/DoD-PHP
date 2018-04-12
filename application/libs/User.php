@@ -12,6 +12,9 @@
           $this->isGuest = false;
           $this->ID = $user['user_id'];
           $this->EMAIL = $user['user_email'];
+          $this->USERNAME  = $user['user_name'];
+          $this->USER_FIRSTNAME = $user['user_firstname'];
+          $this->USER_LASTNAME = $user['user_lastname'];
         } else {
           $this->userLogout();
           http_redirect('/login');
