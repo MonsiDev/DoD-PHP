@@ -27,7 +27,7 @@
       if(class_exists($c_class)) {
         $in_class = new $c_class;
         if(method_exists($in_class, 'action_' . $target[1])) {
-          call_user_func([ new $in_class, 'action_' . $target[1] ]);
+          call_user_func([ new $in_class, 'action_' . $target[1] ], $match['params']);
           return true;
         }
       }

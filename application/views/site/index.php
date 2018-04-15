@@ -1,10 +1,19 @@
 <? CTemplate::render('layouts/header'); ?>
-<main>
+<? CTemplate::render('layouts/nav'); ?>
+<main class="homepage">
   <div class="container">
-    das
+    <div class="row">
+      <div class="posts">
+        <?
+          if(!$_this->user->isGuest) {
+            CTemplate::render('site/forms/add-post');
+          }
+        ?>
+      </div>
+      <div class="posts-info">
+        info
+      </div>
+    </div>
   </div>
-  <? if(empty($_this->user->USER_FIRSTNAME) || empty($this->user->USER_LASTNAME)) {
-    CTemplate::render('site/user_form');
-  } ?>
 </main>
 <? CTemplate::render('layouts/footer'); ?>

@@ -1,0 +1,25 @@
+.header {
+  background-color: #F5F5F5
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 68px;
+  padding: 0 15px;
+}
+
+.nav__item {
+  text-transform: uppercase;
+  margin-left: 15px;
+  color: #B4B4B4;
+  font-weight: 700;
+  transition: color 0.16s;
+  font-size: 14px;
+}
+
+.nav__item.nav__item--active,
+.nav__item:hover {
+  color: #333;
+}
