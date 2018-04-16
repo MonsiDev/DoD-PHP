@@ -1,0 +1,28 @@
+%svg-icon--name {
+  max-width: 21px;
+  width: 21px;
+  vertical-align: middle;
+}
+
+.svg-icon--cog {
+  height: 21px;
+  @extend %svg-icon--name;
+}
+
+.svg-icon--photo {
+
+  height: 18px;
+  @extend %svg-icon--name;
+}
+
+.svg-icon--video {
+  width: 18px;
+  height: 18px;
+  @extend %svg-icon--name;
+}
+
+.svg-icon--text {
+  width: 18px;
+  height: 18px;
+  @extend %svg-icon--name;
+}

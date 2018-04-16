@@ -1,5 +1,13 @@
 $grid-column : 12;
 
+body {
+  background-color: #f5f5f5;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url('/assets/img/bg.png');
+}
+
 .container {
   max-width: 1100px;
   margin: 0 auto;
