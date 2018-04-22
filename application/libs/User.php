@@ -16,6 +16,7 @@
           $this->USER_FIRSTNAME = $user['user_firstname'];
           $this->USER_LASTNAME = $user['user_lastname'];
           $this->USER_PHOTO = $user['user_photo'];
+          $this->USER_DESCRIPTION = $user['user_description'];
         } else {
           $this->userLogout();
           http_redirect('/login');

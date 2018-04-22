@@ -7,40 +7,20 @@
 
     function __construct() {
       parent::__construct();
+      $this->loadModel('post');
     }
 
     public function action_index() {
-
-      // if($this->user->isGuest) {
-      //   http_redirect('/login');
-      // }
-
-      CTemplate::render('site/index', [
-        '_this' => $this
-      ]);
     }
 
     public function action_profile($param) {
-      CTemplate::render('site/profile');
+      CTemplate::render('site/profile', [
+        '_this' => $this,
+        'posts' => $this->model->findPosts()
+      ]);
     }
 
     public function action_post($param) {
       CTemplate::render('site/post');
-    }
-
-    public function action_follow() {
-      CTemplate::render('site/post');
-    }
-
-    public function action_followers() {
-      CTemplate::render('site/post');
-    }
-
-    public function action_forum() {
-      echo('Forum');
-    }
-
-    public function action_forum_theme($param) {
-      echo('Forum Theme');
     }
   }

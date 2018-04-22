@@ -1,0 +1,16 @@
+.avatar {
+  position: realtive;
+}
+
+.avatar__img {
+  width: 100%;
+  height: auto;
+}
+
+.avatar__option {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  padding: 10px 15px;
+  background-color: rgba(51, 51, 51, 0.57);
+}

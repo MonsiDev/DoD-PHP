@@ -30,7 +30,7 @@
 
     public function action_login() {
       if(!$this->user->isGuest) {
-        http_redirect('/');
+        http_redirect($this->user->USERNAME);
       }
       if(http_request(INPUT_POST, 'type')) {
         $this->typeRequest = http_request(INPUT_POST, 'type');

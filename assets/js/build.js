@@ -97,7 +97,7 @@
       });
       Ajax({
         type: "POST",
-        url: "/login",
+        url: "/",
         data: postData.replace(/&+$/, ""),
         onSuccess: function(json) {
           json = JSON.parse(json);
